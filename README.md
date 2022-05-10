@@ -4,6 +4,7 @@ Takes a string from the user with commas seperated values. We would like to retu
 
 INPUT       OUTPUT 
 
+"Green"                          | "Green: 1"
 "Green, Green, Red, Amber, Red"  | "Green: 2\nAmber: 1\nRed: 2" 
 "Green, Red, Red, Red, Amber"    | "Green: 1\nAmber: 1\nRed: 3"
 ""                               | "No results given" 
