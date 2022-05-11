@@ -1,13 +1,21 @@
 
 def report(string)
-  if string == "Green"
-    return "Green: 1" 
-  elsif string == "Red"
-    return "Red: 1"
-  elsif string == "Amber"
-    return "Amber: 1"
-  elsif string == ""
-    return "No results given"
+  green = 0 
+  amber = 0 
+  red = 0
+  string.split(",").each do |grade|
+    if grade == "Green" 
+      green += 1 
+    elsif grade == "Red"
+      red += 1
+    elsif grade == "Amber"
+      amber += 1
+    end
+  end
+  if string == ""
+    "No results given"
+  else 
+    "Green: #{green} Amber: #{amber} Red: #{red}" 
   end 
 end 
 
