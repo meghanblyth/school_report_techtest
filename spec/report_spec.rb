@@ -15,6 +15,10 @@ describe 'report' do
 
   it 'should read an empty string and return a message' do 
     expect(report("")).to eq "No results given"
+  end
+  
+  it 'should count the grades in each report' do 
+    expect(report("Green, Amber, Red, Amber")).to eq "Green: 1 Amber: 2 Red: 1"
   end 
 
 end 
